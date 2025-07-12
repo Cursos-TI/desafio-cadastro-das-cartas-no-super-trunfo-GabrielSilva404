@@ -1,4 +1,4 @@
-#include <stdio.h>
+   #include <stdio.h>
 
         // Desafio: Super Trunfo De Paises!
         // Dividir Para Conquistar!
@@ -12,7 +12,7 @@
                 double Área1, Área2;
                 double PIB1, PIB2;
                 int Número_de_Pontos_Turísticos1, Número_de_Pontos_Turísticos2;
-        
+
     // Exibir As Perguntas da Carta 1
 
     printf("\nDesafio Super Trunfo!\n  ");
@@ -23,7 +23,7 @@
 
     printf("Digite o Código: ");
     scanf("%s", &Código1);
-
+   
     printf("Digite o Nome_Da_Cidade: ");
     scanf("%s", &Nome_da_Cidade1);
 
@@ -40,7 +40,7 @@
     scanf("%d", &Número_de_Pontos_Turísticos1);
 
     system("clear");
- 
+
     // Exibir As Perguntas Da Carta 2
 
     printf("\nDesafio Super Trunfo!\n  ");
