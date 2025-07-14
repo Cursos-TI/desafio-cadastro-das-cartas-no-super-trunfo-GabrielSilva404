@@ -1,5 +1,5 @@
-   #include <stdio.h>
-   #include <stdlib.h>
+#include <stdio.h>
+#include <stdlib.h>
 
         // Desafio: Super Trunfo De Paises!
         // Dividir Para Conquistar!
@@ -13,7 +13,8 @@
             double Area1, Area2;
             double PIB1, PIB2;
           int NumerodePontosTuristicos1, NumerodePontosTuristicos2;
-
+          float DensidadePopulacional1, DensidadePopulacional2;
+          float PIBperCapita1, PIBperCapita2;
     // Exibir As Perguntas da Carta 1
 
     printf("**Desafio Super Trunfo!**\n  ");
@@ -70,6 +71,24 @@
 
     system("clear");
 
+// Conversão dos resultados digitados.
+
+    Area1 = Area1 * Area1;
+    Area2 = Area2 * Area2;
+     
+   // Populacao1 = Populacao1 * 100;
+   // Populacao2 = Populacao2 * 100;
+
+   // PIB1 = PIB1 * 100;
+    //PIB2 = PIB2 * 100;
+
+    DensidadePopulacional1 = Populacao1 / Area1 * 1000;
+    DensidadePopulacional2 = Populacao2 / Area2 * 1000;
+
+    PIBperCapita1 = PIB1 / Populacao1 * 1000;
+    PIBperCapita2 = PIB2 / Populacao2 * 1000;
+
+
     // Exibir As Informações Das Cartas
     
     printf("\n\n Informações_Da_Carta 1: \n\n");
@@ -77,21 +96,26 @@
     printf("Estado: %s\n", Estado1);
     printf("Código: %s\n", Codigo1);
     printf("Cidade: %s\n", NomedaCidade1);
-    printf("População: %.3f Milhões\n", Populacao1);
-    printf("Área: %.3lfkm\n", Area1);
-    printf("PIB: %.3lf Bilhões\n", PIB1);
+    printf("População: %.2f Mi\n", Populacao1);
+    printf("Área: %.2lfkm²\n", Area1);
+    printf("PIB: %.2lf Bi\n", PIB1);
     printf("Pontos Turísticos: %d Lugares\n", NumerodePontosTuristicos1);
 
+    printf("Densidade Populacional: %.2f Hab/km²\n", DensidadePopulacional1);
+    printf("PIB per Capita: %.2f R$\n\n", PIBperCapita1);
 
     printf("\n\n Informações_Da_Carta 2: \n\n");
 
     printf("Estado: %s\n", Estado2);
     printf("Código: %s\n", Codigo2);
     printf("Cidade: %s\n", NomedaCidade2);
-    printf("População: %.3lf Milhões\n", Populacao2);
-    printf("Área: %.3lfkm²\n", Area2);
-    printf("PIB: %.3lf Bilhões\n", PIB2);
+    printf("População: %.2lf Mi\n", Populacao2);
+    printf("Área: %.2lfkm²\n", Area2);
+    printf("PIB: %.2lf Bi\n", PIB2);
     printf("Pontos Turísticos: %d Lugares\n", NumerodePontosTuristicos2);
+
+    printf("Densidade Populacional: %.2f Hab/km²\n", DensidadePopulacional2);
+    printf("PIB per Capita: %.2f R$\n", PIBperCapita2);
 
 
 
