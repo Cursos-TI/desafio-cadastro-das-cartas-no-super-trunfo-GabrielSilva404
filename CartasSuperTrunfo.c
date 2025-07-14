@@ -6,16 +6,16 @@
         int main() {
 
           char Estado1[20], Estado2[20];
-                char Codigo1[20], Codigo2[20];
-                char NomedaCidade1[20], NomedaCidade2[20];
-                double Populacao1, Populacao2;
-                double Area1, Area2;
-                double PIB1, PIB2;
-                int NumerodePontosTuristicos1, NumerodePontosTuristicos2;
+          char Codigo1[20], Codigo2[20];
+          char NomedaCidade1[20], NomedaCidade2[20];
+            double Populacao1, Populacao2;
+            double Area1, Area2;
+            double PIB1, PIB2;
+          int NumerodePontosTuristicos1, NumerodePontosTuristicos2;
 
     // Exibir As Perguntas da Carta 1
 
-    printf("\nDesafio Super Trunfo!\n  ");
+    printf("**Desafio Super Trunfo!**\n  ");
       printf("    (Carta 1)\n\n");
 
     printf("Digite o Estado: ");
@@ -43,7 +43,7 @@
 
     // Exibir As Perguntas Da Carta 2
 
-    printf("\nDesafio Super Trunfo!\n  ");
+    printf("***Desafio Super Trunfo!***\n  ");
       printf("    (Carta 2)\n\n");
 
     printf("Digite o Estado: ");
@@ -88,12 +88,15 @@
     printf("Código: %s\n", Codigo2);
     printf("Cidade: %s\n", NomedaCidade2);
     printf("População: %.3lf Milhões\n", Populacao2);
-    printf("Área: %.3lfkm\n", Area2);
+    printf("Área: %.3lfkm²\n", Area2);
     printf("PIB: %.3lf Bilhões\n", PIB2);
     printf("Pontos Turísticos: %d Lugares\n", NumerodePontosTuristicos2);
 
 
 
+
+
+    
 
     
     return 0;
