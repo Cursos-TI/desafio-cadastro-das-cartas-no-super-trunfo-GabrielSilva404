@@ -73,14 +73,11 @@
 
 // Conversão dos resultados digitados.
 
-    Area1 = Area1 * Area1;
-    Area2 = Area2 * Area2;
+   // Area1, Area2 *= 100;
      
-   // Populacao1 = Populacao1 * 100;
-   // Populacao2 = Populacao2 * 100;
+   // Populacao1, populacao2 *= 100;
 
-   // PIB1 = PIB1 * 100;
-    //PIB2 = PIB2 * 100;
+   // PIB1, PIB2 *= 100;
 
     DensidadePopulacional1 = Populacao1 / Area1 * 1000;
     DensidadePopulacional2 = Populacao2 / Area2 * 1000;
@@ -96,9 +93,9 @@
     printf("Estado: %s\n", Estado1);
     printf("Código: %s\n", Codigo1);
     printf("Cidade: %s\n", NomedaCidade1);
-    printf("População: %.2f Mi\n", Populacao1);
+    printf("População: %.3f Mi\n", Populacao1);
     printf("Área: %.2lfkm²\n", Area1);
-    printf("PIB: %.2lf Bi\n", PIB1);
+    printf("PIB: %.3lf Bi\n", PIB1);
     printf("Pontos Turísticos: %d Lugares\n", NumerodePontosTuristicos1);
 
     printf("Densidade Populacional: %.2f Hab/km²\n", DensidadePopulacional1);
@@ -109,9 +106,9 @@
     printf("Estado: %s\n", Estado2);
     printf("Código: %s\n", Codigo2);
     printf("Cidade: %s\n", NomedaCidade2);
-    printf("População: %.2lf Mi\n", Populacao2);
+    printf("População: %.3lf Mi\n", Populacao2);
     printf("Área: %.2lfkm²\n", Area2);
-    printf("PIB: %.2lf Bi\n", PIB2);
+    printf("PIB: %.3lf Bi\n", PIB2);
     printf("Pontos Turísticos: %d Lugares\n", NumerodePontosTuristicos2);
 
     printf("Densidade Populacional: %.2f Hab/km²\n", DensidadePopulacional2);
