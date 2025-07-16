@@ -3,6 +3,7 @@
         "main"
     ],
     "files.associations": {
-        "CartasSuperTrunfo2.C": "cpp"
+        "CartasSuperTrunfo2.C": "cpp",
+        "CartasSuperTrunfo3.C": "cpp"
     }
 }
