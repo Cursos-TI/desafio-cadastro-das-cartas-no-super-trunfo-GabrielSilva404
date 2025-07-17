@@ -8,9 +8,9 @@
 
         // Declarando as Variaveis
 
-          char Estado1[20], Estado2[20];
-          char Codigo1[20], Codigo2[20];
-          char NomedaCidade1[20], NomedaCidade2[20];
+          char Estado1[50], Estado2[50];
+          char Codigo1[50], Codigo2[50];
+          char NomedaCidade1[50], NomedaCidade2[50];
 
           unsigned int Populacao1, Populacao2;
           float Area1, Area2;
@@ -82,12 +82,13 @@
     system("clear");
 
 // Conversão dos Resultados Digitados:
+// Calculando a Densidade Populacional e PIBperCapita.
 
-    DensidadePopulacional1 = Populacao1 / Area1 * 1000;
-    DensidadePopulacional2 = Populacao2 / Area2 * 1000;
+    DensidadePopulacional1 = Populacao1 / Area1;
+    DensidadePopulacional2 = Populacao2 / Area2;
 
-    PIBperCapita1 = PIB1 / Populacao1 * 1000;
-    PIBperCapita2 = PIB2 / Populacao2 * 1000;
+    PIBperCapita1 = PIB1 / Populacao1;
+    PIBperCapita2 = PIB2 / Populacao2;
 
 /*Calcular o Super Poder:Para cada carta, calcule o "Super Poder"
 somando todos os atributos numéricos população, área, PIB, 
@@ -123,51 +124,47 @@ ResultadoCarta2 = SuperPoder2 > SuperPoder1;
     
     printf("\n\n Informações_Da_Carta 1: \n\n");
 
-    printf("Estado: %s - %u\n", Estado1, ResultadoCarta1);
-    printf("Código: %s - %u\n", Codigo1, ResultadoCarta1);
-    printf("Cidade: %s- %u\n", NomedaCidade1, ResultadoCarta1);
-    printf("População: %.3d Mi- %u\n", Populacao1, ResultadoCarta1);
-    printf("Área: %.2fkm²- %u\n", Area1, ResultadoCarta1);
-    printf("PIB: %.3f Bi - %u\n", PIB1, ResultadoCarta1);
-    printf("Pontos Turísticos: %u Lugares - %u\n", NumerodePontosTuristicos1, ResultadoCarta1);
+    printf("Estado: %s (%u)\n", Estado1, ResultadoCarta1);
+    printf("Código: %s (%u)\n", Codigo1, ResultadoCarta1);
+    printf("Cidade: %s (%u)\n", NomedaCidade1, ResultadoCarta1);
+    printf("População: %'.3d Mi (%u)\n", Populacao1, ResultadoCarta1);
+    printf("Área: %'.2fkm² (%u)\n", Area1, ResultadoCarta1);
+    printf("PIB: %'.3f Bi  (%u)\n", PIB1, ResultadoCarta1);
+    printf("Pontos Turísticos: %u Lugares (%u)\n", NumerodePontosTuristicos1, ResultadoCarta1);
 
     // exibir a Densidade Populacional e PIB Capita da Carta 1:
 
-    printf("Densidade Populacional: %.2f Hab/km²- %u\n", DensidadePopulacional1, ResultadoCarta1);
-    printf("PIB per Capita: %.2f R$ - %u\n", PIBperCapita1, ResultadoCarta1);
+    printf("Densidade Populacional: %'.2f Hab/km² (%u)\n", DensidadePopulacional1, ResultadoCarta1);
+    printf("PIB per Capita: %'.2f R$ (%u)\n", PIBperCapita1, ResultadoCarta1);
 
     // Exibir o Super_Poder:
 
-    printf("Super Poder: %.2f - %u\n\n", SuperPoder1, ResultadoCarta1);
+    printf("Super Poder: %'.2f (%u)\n\n", SuperPoder1, ResultadoCarta1);
 
       /** Exibir Informações Da Carta 2 */
     // Exibir Os Resultados Das Comparações:
 
     printf("\n\n Informações_Da_Carta 2: \n\n");
 
-    printf("Estado: %s- %u\n", Estado2, ResultadoCarta2);
-    printf("Código: %s- %u\n", Codigo2, ResultadoCarta2);
-    printf("Cidade: %s- %u\n", NomedaCidade2, ResultadoCarta2);
-    printf("População: %.3d Mi- %u\n", Populacao2, ResultadoCarta2);
-    printf("Área: %.2fkm²- %u\n", Area2, ResultadoCarta2);
-    printf("PIB: %.3f Bi- %u\n", PIB2, ResultadoCarta2);
-    printf("Pontos Turísticos: %u Lugares- %u\n", NumerodePontosTuristicos2, ResultadoCarta2);
+    printf("Estado: %s (%u)\n", Estado2, ResultadoCarta2);
+    printf("Código: %s (%u)\n", Codigo2, ResultadoCarta2);
+    printf("Cidade: %s (%u)\n", NomedaCidade2, ResultadoCarta2);
+    printf("População: %'.3d Mi (%u)\n", Populacao2, ResultadoCarta2);
+    printf("Área: %'.2fkm² (%u)\n", Area2, ResultadoCarta2);
+    printf("PIB: %'.3f Bi (%u)\n", PIB2, ResultadoCarta2);
+    printf("Pontos Turísticos: %u Lugares (%u)\n", NumerodePontosTuristicos2, ResultadoCarta2);
 
     // exibir a Densidade Populacional e PIB Capita da Carta 2:
 
-    printf("Densidade Populacional: %.2f Hab/- %u\n", DensidadePopulacional2, ResultadoCarta2);
-    printf("PIB per Capita: %.2f R$ - %u\n", PIBperCapita2, ResultadoCarta2);
+    printf("Densidade Populacional: %'.2f Hab/ (%u)\n", DensidadePopulacional2, ResultadoCarta2);
+    printf("PIB per Capita: %'.2f R$ (%u)\n", PIBperCapita2, ResultadoCarta2);
 
     // Exibir o Super_Poder
 
-    printf("Super Poder: %.2f - %u\n\n", SuperPoder2, ResultadoCarta2);
+    printf("Super Poder: %'.2f (%u)\n\n", SuperPoder2, ResultadoCarta2);
 
 
 
-
-
-
-    
 
     
     return 0;
