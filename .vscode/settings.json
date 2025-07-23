@@ -1,0 +1,10 @@
+{
+    "githubPullRequests.ignoredPullRequestBranches": [
+        "main"
+    ],
+    "files.associations": {
+        "CartasSuperTrunfo2.C": "cpp",
+        "CartasSuperTrunfo3.C": "cpp",
+        "CartasSuperTrunfo1.C": "cpp"
+    }
+}
